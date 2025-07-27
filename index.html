@@ -1,13 +1,138 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- FIM GOOGLE FONTES -->
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- FIM BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Alexandre Achilles</title>
+</head>
+<body>
+    
+    <header>
+        <div class="interface">
+            
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="#">
+                    <button>Contato</button>
+                </a>
+            </div><!--btn-contato-->
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+        </div><!--interface-->
+    </header>
+
+    <main>
+
+        <section class="sobre" id="inicio">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER, <span>SOU ALEXANDRE ACHILLES.</span></h2>
+                        <p style="font-size: 20px;">Sou um estudante de Informática Biomédica pela <span style="color:#08ad0d;">UFCSPA</span>, com formação técnica em informática pelo <span style="color:#08ad0d;">IFSul</span>, interessado em integrar tecnologia, ciência e saúde por meio do desenvolvimento de soluções inovadoras. Tenho experiência em projetos interdisciplinares, com foco em acessibilidade da informação, responsabilidade social e aplicação prática do conhecimento técnico.</p>
+                        <p style="font-size: 20px;">Acredito que a tecnologia deve estar a serviço das pessoas e do conhecimento. Por isso, busco constantemente expandir minhas habilidades em ciência e computação, colaborando em projetos que promovam o acesso à informação, a equidade e a sustentabilidade. Vejo na interdisciplinaridade uma oportunidade de inovar com propósito e responsabilidade.</p>
+                        <div class="btn-social">
+                            <a href="#" onclick="window.open('https://www.instagram.com/alex_achilles_/', '_blank')"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="#" onclick="window.open('https://www.linkedin.com/in/alexandre-achilles/', '_blank')"><button><i class="bi bi-linkedin"></i></button></a>
+                        </div><!--btn-social-->
+                    </div><!--txt-sobre-->
+                    <div class="img-sobre">
+                        <img src="images/foto.svg" style="border-radius: 20px; border: 2px solid #08ad0d;"  alt="">
+                    </div><!--img-sobre-->
+
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--sobre-->
+
+        <section class="topo-do-site" id="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-topo-site">
+                        <img src="images/auu.png" style="max-width: 100%; border-radius: 20px; border: 2px solid #08ad0d;">
+                    </div><!--img-topo-site-->
+                    <div class="txt-topo-site">
+                        <h1>Transformo conhecimento em soluções e ideias em impacto — unindo tecnologia, ciência e propósito em cada projeto.<span>.</span></h1>
+
+                    </div><!--txt-topo-site-->
+
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo-do-site-->
+
+        <section class="especiliadades" id="habilidades">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>HABILIDADES.</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-database"></i>
+                        <h3>Análise De Grandes Dados</h3>
+                        <p>Conhecimentos em análise de dados com Power BI, Excel e SQL para geração de insights e tomada de decisão.</p>
+                    </div><!--especialidades-box-->
+
+                    <div class="especialidades-box">
+                        <i class="bi bi-code-square"></i>
+                        <h3>Desenvolvimento Web</h3>
+                        <p>Habilidades em desenvolvimento web utilizando JavaScript, CSS, PHP e outras tecnologias para criação de soluções dinâmicas e funcionais.</p>
+                    </div><!--especialidades-box-->
+
+                    <div class="especialidades-box">
+                        <i class="bi bi-tree"></i>
+                        <h3>Impacto e Transformação</h3>
+                        <p>Facilidade em integrar conhecimentos técnicos e científicos para desenvolver soluções inovadoras com foco em impacto social e acessibilidade da informação.</p>
+                    </div><!--especialidades-box-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--especiliadades-->
+
+
+
+        <section class="portfolio" id="projetos">
+            <div class="interface">
+                <h2 class="titulo">MEUS <span>PROJETOS.</span></h2>
+                <div class="flex">
+                    
+                    <div class="img-port" style="background-image: url(images/logoCarbonifera.svg);">
+                        <div class="overlay" onclick="window.open('https://www.instagram.com/carbonifera.biodiversa/', '_blank')">Carbonífera Biodiversa</div>
+                    </div>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--portfolio-->
+
+
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+
+                </div>
+            </div><!--line-footer-->
+
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:alexachillesk@gmail.com">alexachillesk@gmail.com</a></p>
+            </div><!--line-footer-->
+        </div><!--interface-->
+    </footer>
+
+</body>
 </html>
