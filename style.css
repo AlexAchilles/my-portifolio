@@ -11,6 +11,32 @@ body {
     height: 100vh;
 }
 
+.menu-mobile {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.menu-mobile.abrir {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .menu-desktop {
+        display: block;
+    }
+
+    .btn-abrir-menu, .menu-mobile {
+        display: none;
+    }
+}
+
 .interface {
     max-width: 1280px;
     margin: 0 auto;
@@ -477,4 +503,6 @@ footer .line-footer p a {
     footer .line-footer {
         text-align: center;
     }
+
+    
 }

@@ -30,15 +30,28 @@
             </nav>
 
             <div class="btn-contato">
-                <a href="#">
+                <a href="https://wa.me/5551980207387?text=Ol%C3%A1%2C%20vim%20aqui%20pelo%20seu%20portif%C3%B3lio." target="_blank">
                     <button>Contato</button>
                 </a>
             </div><!--btn-contato-->
 
-            <div class="btn-abrir-menu" id="btn-menu">
+            <div class="btn-abrir-menu" id="btn-menu">   
+
                 <i class="bi bi-list"></i>
             </div>
         </div><!--interface-->
+
+                       <div class="menu-mobile" id="menu-mobile">
+    <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</div><!--menu-mobile-->
+
+        <div class="overlay-menu" id="overlay-menu"></div>
     </header>
 
     <main>
@@ -67,7 +80,7 @@
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
-                        <h1>Transformo conhecimento em soluções e ideias em impacto — unindo tecnologia, ciência e propósito em cada projeto.<span>.</span></h1>
+                        <h1>Transformo conhecimento em soluções e ideias em impacto — unindo tecnologia, ciência e propósito em cada projeto<span>.</span></h1>
                         
                     </div><!--txt-topo-site-->
                     <div class="img-topo-site">
@@ -134,5 +147,30 @@
         </div><!--interface-->
     </footer>
 
+<script>
+    const btnMenu = document.getElementById('btn-menu');
+    const menuMobile = document.getElementById('menu-mobile');
+    const overlay = document.getElementById('overlay-menu');
+
+    btnMenu.addEventListener('click', () => {
+        menuMobile.classList.add('abrir-menu');
+        overlay.classList.add('ativo');
+    });
+
+    overlay.addEventListener('click', () => {
+        menuMobile.classList.remove('abrir-menu');
+        overlay.classList.remove('ativo');
+    });
+
+    document.querySelectorAll('#menu-mobile a').forEach(link => {
+        link.addEventListener('click', () => {
+            menuMobile.classList.remove('abrir-menu');
+            overlay.classList.remove('ativo');
+        });
+    });
+</script>
+
+
+ 
 </body>
 </html>
